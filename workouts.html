@@ -1,0 +1,168 @@
+<! –– chirprotection workout and health integration ––>
+<! –– health sample has not been created yet but follows the same mechanics as fitness ––>
+
+<a href="https://www.appsheet.com/start/6eda7f62-9100-42e7-a1ad-b14f463adbe3"> Google Cloud Workout Log <a>
+
+var view = UILabel()
+view.frame = CGRect(x: 0, y: 0, width: 254, height: 35)
+view.backgroundColor = .white
+
+view.layer.backgroundColor = UIColor(red: 0.691, green: 0.805, blue: 0.833, alpha: 1).cgColor
+view.layer.cornerRadius = 10
+
+var parent = self.view!
+parent.addSubview(view)
+view.translatesAutoresizingMaskIntoConstraints = false
+view.widthAnchor.constraint(equalToConstant: 254).isActive = true
+view.heightAnchor.constraint(equalToConstant: 35).isActive = true
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 29).isActive = true
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 434).isActive = true
+
+var view = UILabel()
+view.frame = CGRect(x: 0, y: 0, width: 206, height: 25)
+view.backgroundColor = .white
+
+view.textColor = UIColor(red: 0.105, green: 0.44, blue: 0.629, alpha: 1)
+view.font = UIFont(name: "Lekton-Regular", size: 16)
+
+// Line height: 16 pt
+
+view.textAlignment = .center
+view.text = "Workout Recommendations"
+
+var parent = self.view!
+parent.addSubview(view)
+view.translatesAutoresizingMaskIntoConstraints = false
+view.widthAnchor.constraint(equalToConstant: 206).isActive = true
+view.heightAnchor.constraint(equalToConstant: 25).isActive = true
+view.centerXAnchor.constraint(equalTo: parent.centerXAnchor, constant: -51).isActive = true
+view.centerYAnchor.constraint(equalTo: parent.centerYAnchor, constant: 3.5).isActive = true
+
+// Rectangle 21
+
+var view = UILabel()
+view.frame = CGRect(x: 0, y: 0, width: 254, height: 151)
+view.backgroundColor = .white
+
+view.layer.backgroundColor = UIColor(red: 0.922, green: 0.98, blue: 0.996, alpha: 1).cgColor
+view.layer.cornerRadius = 10
+
+var parent = self.view!
+parent.addSubview(view)
+view.translatesAutoresizingMaskIntoConstraints = false
+view.widthAnchor.constraint(equalToConstant: 254).isActive = true
+view.heightAnchor.constraint(equalToConstant: 151).isActive = true
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 29).isActive = true
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 469).isActive = true
+
+
+
+// You like to avoid the gym and you enjoy HIIT/cardio:
+
+view = UILabel()
+view.frame = CGRect(x: 0, y: 0, width: 253, height: 36)
+view.backgroundColor = .white
+
+view.textColor = UIColor(red: 0.105, green: 0.44, blue: 0.629, alpha: 1)
+view.font = UIFont(name: "Lekton-Regular", size: 16)
+view.numberOfLines = 0
+view.lineBreakMode = .byWordWrapping
+
+// Line height: 16 pt
+
+view.textAlignment = .center
+view.text = "You like to avoid the gym and you enjoy HIIT/cardio:"
+
+parent = self.view!
+parent.addSubview(view)
+view.translatesAutoresizingMaskIntoConstraints = false
+view.widthAnchor.constraint(equalToConstant: 253).isActive = true
+view.heightAnchor.constraint(equalToConstant: 36).isActive = true
+view.centerXAnchor.constraint(equalTo: parent.centerXAnchor, constant: -50.5).isActive = true
+view.centerYAnchor.constraint(equalTo: parent.centerYAnchor, constant: 50).isActive = true
+
+
+
+// Rectangle 31
+
+view = UILabel()
+view.frame = CGRect(x: 0, y: 0, width: 75, height: 82)
+view.backgroundColor = .white
+
+view.layer.backgroundColor = UIColor(red: 0.769, green: 0.769, blue: 0.769, alpha: 1).cgColor
+
+parent = self.view!
+parent.addSubview(view)
+view.translatesAutoresizingMaskIntoConstraints = false
+view.widthAnchor.constraint(equalToConstant: 75).isActive = true
+view.heightAnchor.constraint(equalToConstant: 82).isActive = true
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 63).isActive = true
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 524).isActive = true
+
+
+
+// Rectangle 32
+
+view = UILabel()
+view.frame = CGRect(x: 0, y: 0, width: 75, height: 82)
+view.backgroundColor = .white
+
+view.layer.backgroundColor = UIColor(red: 0.769, green: 0.769, blue: 0.769, alpha: 1).cgColor
+
+parent = self.view!
+parent.addSubview(view)
+view.translatesAutoresizingMaskIntoConstraints = false
+view.widthAnchor.constraint(equalToConstant: 75).isActive = true
+view.heightAnchor.constraint(equalToConstant: 82).isActive = true
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 169).isActive = true
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 527).isActive = true
+
+
+
+// Screen Shot 2021-08-14 at 8.16 1
+
+view = UILabel()
+view.frame = CGRect(x: 0, y: 0, width: 78, height: 96)
+view.backgroundColor = .white
+
+let image0 = UIImage(named: "Screen Shot 2021-08-14 at 8.16.png")?.cgImage
+let layer0 = CALayer()
+layer0.contents = image0
+layer0.transform = CATransform3DMakeAffineTransform(CGAffineTransform(a: 1, b: 0, c: 0, d: 1, tx: 0, ty: 0))
+layer0.bounds = view.bounds
+layer0.position = view.center
+view.layer.addSublayer(layer0)
+
+
+parent = self.view!
+parent.addSubview(view)
+view.translatesAutoresizingMaskIntoConstraints = false
+view.widthAnchor.constraint(equalToConstant: 78).isActive = true
+view.heightAnchor.constraint(equalToConstant: 96).isActive = true
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 62).isActive = true
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 517).isActive = true
+
+
+
+// Screen Shot 2021-08-14 at 8.19 1
+
+view = UILabel()
+view.frame = CGRect(x: 0, y: 0, width: 75, height: 96)
+view.backgroundColor = .white
+
+let image0 = UIImage(named: "Screen Shot 2021-08-14 at 8.19.png")?.cgImage
+let layer0 = CALayer()
+layer0.contents = image0
+layer0.transform = CATransform3DMakeAffineTransform(CGAffineTransform(a: 1.01, b: 0, c: 0, d: 1, tx: 0, ty: 0))
+layer0.bounds = view.bounds
+layer0.position = view.center
+view.layer.addSublayer(layer0)
+
+
+parent = self.view!
+parent.addSubview(view)
+view.translatesAutoresizingMaskIntoConstraints = false
+view.widthAnchor.constraint(equalToConstant: 75).isActive = true
+view.heightAnchor.constraint(equalToConstant: 96).isActive = true
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 169).isActive = true
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 517).isActive = true
